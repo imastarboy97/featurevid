@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeatureVid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page with MS Word Image -->
+    <div class="landing-page">
+        <img src="assets/word-blank2.png" alt="MS Word Blank Page" class="landing-img">
+
+        <!-- Overlay i button for Bold feature -->
+        <img src="assets/i-button2.png" 
+             class="overlay-btn" 
+             data-video="videos/video1.mp4" 
+             style="top: 90px; left: 190px; width: 10px; height: 10px;" 
+             alt="Info Button">
+        <img src="assets/i-button2.png" 
+            class="overlay-btn" 
+            data-video="videos/video2.mp4" 
+            style="top: 512px; left: 832px; width: 10px; height: 10px;" 
+            alt="Info Button">
+
+        <!-- Video overlay placed inside the landing page so it layers on top of the image -->
+        <div id="videoModal" class="modal" aria-hidden="true">
+            <!-- Close button moved into top-right as an 'X' -->
+            <button id="closeModal" class="close-btn" aria-label="Close video">&times;</button>
+            <video id="videoPlayer" controls></video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
